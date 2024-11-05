@@ -1,0 +1,1 @@
+web: gunicorn fitbuddy_backend.wsgi
