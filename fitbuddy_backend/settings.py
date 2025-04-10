@@ -27,6 +27,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     "fitbuddy-backend-ruby.vercel.app",
+    "localhost",
+    "127.0.0.1",
 ]
 
 # Application definition
@@ -129,4 +131,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # CORS Configuration 
 CORS_ALLOWED_ORIGINS = [
     "https://fitbuddy-backend-ruby.vercel.app",
+]
+
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^http://localhost:\d+$", 
 ]
